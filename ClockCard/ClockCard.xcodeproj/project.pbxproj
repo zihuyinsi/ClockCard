@@ -1,0 +1,571 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A9265DB11FBD95AF00D83BA7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A9265DB01FBD95AF00D83BA7 /* AppDelegate.m */; };
+		A9265DB41FBD95AF00D83BA7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9265DB31FBD95AF00D83BA7 /* ViewController.m */; };
+		A9265DB71FBD95AF00D83BA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9265DB51FBD95AF00D83BA7 /* Main.storyboard */; };
+		A9265DB91FBD95AF00D83BA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9265DB81FBD95AF00D83BA7 /* Assets.xcassets */; };
+		A9265DBC1FBD95AF00D83BA7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9265DBA1FBD95AF00D83BA7 /* LaunchScreen.storyboard */; };
+		A9265DBF1FBD95AF00D83BA7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A9265DBE1FBD95AF00D83BA7 /* main.m */; };
+		A9265DCE1FBE827A00D83BA7 /* PublicFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = A9265DCD1FBE827A00D83BA7 /* PublicFactory.m */; };
+		A9265DD21FBE82C400D83BA7 /* ClockCardDB.m in Sources */ = {isa = PBXBuildFile; fileRef = A9265DD11FBE82C400D83BA7 /* ClockCardDB.m */; };
+		A9265DE11FBEB5A100D83BA7 /* ClockCalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9265DDF1FBEB5A100D83BA7 /* ClockCalendarViewController.m */; };
+		A9265DFA1FC2BC8400D83BA7 /* ClockCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = A9265DF41FC2BC8400D83BA7 /* ClockCalendarView.m */; };
+		A9265DFB1FC2BC8400D83BA7 /* ClockCalendarCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9265DF51FC2BC8400D83BA7 /* ClockCalendarCollectionViewCell.xib */; };
+		A9265DFC1FC2BC8400D83BA7 /* ClockCalendarCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A9265DF61FC2BC8400D83BA7 /* ClockCalendarCollectionViewCell.m */; };
+		A9265DFD1FC2BC8400D83BA7 /* ClockCalendarHearder.m in Sources */ = {isa = PBXBuildFile; fileRef = A9265DF71FC2BC8400D83BA7 /* ClockCalendarHearder.m */; };
+		A9265DFE1FC2BC8400D83BA7 /* ClockCalendarWeekView.m in Sources */ = {isa = PBXBuildFile; fileRef = A9265DF91FC2BC8400D83BA7 /* ClockCalendarWeekView.m */; };
+		A9265E011FC2BDB600D83BA7 /* CalendarDayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A9265E001FC2BDB600D83BA7 /* CalendarDayModel.m */; };
+		A9265E051FC2C1B800D83BA7 /* NSDate+Calendar.m in Sources */ = {isa = PBXBuildFile; fileRef = A9265E041FC2C1B800D83BA7 /* NSDate+Calendar.m */; };
+		A9265E081FC2C29800D83BA7 /* CalendarMonthModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A9265E071FC2C29800D83BA7 /* CalendarMonthModel.m */; };
+		A9265E0B1FC2D2EB00D83BA7 /* UIView+Cornerdious.m in Sources */ = {isa = PBXBuildFile; fileRef = A9265E0A1FC2D2EB00D83BA7 /* UIView+Cornerdious.m */; };
+		A9265E0E1FC2D6F300D83BA7 /* UIView+L_Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = A9265E0D1FC2D6F300D83BA7 /* UIView+L_Frame.m */; };
+		A968A3631FC7F94F00F88D16 /* UIImage+Date.m in Sources */ = {isa = PBXBuildFile; fileRef = A968A3621FC7F94F00F88D16 /* UIImage+Date.m */; };
+		A968A36C1FC808E100F88D16 /* RecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A968A36B1FC808E100F88D16 /* RecordViewController.m */; };
+		A9A956B11FC4256C0077CDA7 /* CustomAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = A9A956B01FC4256C0077CDA7 /* CustomAlertView.m */; };
+		A9A956B51FC425B10077CDA7 /* CustomAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9A956B41FC425B10077CDA7 /* CustomAlertView.xib */; };
+		C68D344D846DC3801025295A /* libPods-ClockCard.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A43074C89D51367DEC43C1C9 /* libPods-ClockCard.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6922147B971F0085015CF791 /* Pods-ClockCard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClockCard.release.xcconfig"; path = "Pods/Target Support Files/Pods-ClockCard/Pods-ClockCard.release.xcconfig"; sourceTree = "<group>"; };
+		827376BC8571EB3A5111E4F2 /* Pods-ClockCard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClockCard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ClockCard/Pods-ClockCard.debug.xcconfig"; sourceTree = "<group>"; };
+		A43074C89D51367DEC43C1C9 /* libPods-ClockCard.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ClockCard.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9265DAC1FBD95AF00D83BA7 /* ClockCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClockCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9265DAF1FBD95AF00D83BA7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A9265DB01FBD95AF00D83BA7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A9265DB21FBD95AF00D83BA7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A9265DB31FBD95AF00D83BA7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A9265DB61FBD95AF00D83BA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A9265DB81FBD95AF00D83BA7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A9265DBB1FBD95AF00D83BA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A9265DBD1FBD95AF00D83BA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9265DBE1FBD95AF00D83BA7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A9265DC51FBD9FA400D83BA7 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		A9265DCB1FBE827A00D83BA7 /* Constant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
+		A9265DCC1FBE827A00D83BA7 /* PublicFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublicFactory.h; sourceTree = "<group>"; };
+		A9265DCD1FBE827A00D83BA7 /* PublicFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PublicFactory.m; sourceTree = "<group>"; };
+		A9265DD01FBE82C400D83BA7 /* ClockCardDB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClockCardDB.h; sourceTree = "<group>"; };
+		A9265DD11FBE82C400D83BA7 /* ClockCardDB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClockCardDB.m; sourceTree = "<group>"; };
+		A9265DDE1FBEB5A100D83BA7 /* ClockCalendarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClockCalendarViewController.h; sourceTree = "<group>"; };
+		A9265DDF1FBEB5A100D83BA7 /* ClockCalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClockCalendarViewController.m; sourceTree = "<group>"; };
+		A9265DF11FC2BC8400D83BA7 /* ClockCalendarHearder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClockCalendarHearder.h; sourceTree = "<group>"; };
+		A9265DF21FC2BC8400D83BA7 /* ClockCalendarCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClockCalendarCollectionViewCell.h; sourceTree = "<group>"; };
+		A9265DF31FC2BC8400D83BA7 /* ClockCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClockCalendarView.h; sourceTree = "<group>"; };
+		A9265DF41FC2BC8400D83BA7 /* ClockCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClockCalendarView.m; sourceTree = "<group>"; };
+		A9265DF51FC2BC8400D83BA7 /* ClockCalendarCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ClockCalendarCollectionViewCell.xib; sourceTree = "<group>"; };
+		A9265DF61FC2BC8400D83BA7 /* ClockCalendarCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClockCalendarCollectionViewCell.m; sourceTree = "<group>"; };
+		A9265DF71FC2BC8400D83BA7 /* ClockCalendarHearder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClockCalendarHearder.m; sourceTree = "<group>"; };
+		A9265DF81FC2BC8400D83BA7 /* ClockCalendarWeekView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClockCalendarWeekView.h; sourceTree = "<group>"; };
+		A9265DF91FC2BC8400D83BA7 /* ClockCalendarWeekView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClockCalendarWeekView.m; sourceTree = "<group>"; };
+		A9265DFF1FC2BDB600D83BA7 /* CalendarDayModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalendarDayModel.h; sourceTree = "<group>"; };
+		A9265E001FC2BDB600D83BA7 /* CalendarDayModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalendarDayModel.m; sourceTree = "<group>"; };
+		A9265E031FC2C1B800D83BA7 /* NSDate+Calendar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+Calendar.h"; sourceTree = "<group>"; };
+		A9265E041FC2C1B800D83BA7 /* NSDate+Calendar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Calendar.m"; sourceTree = "<group>"; };
+		A9265E061FC2C29800D83BA7 /* CalendarMonthModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalendarMonthModel.h; sourceTree = "<group>"; };
+		A9265E071FC2C29800D83BA7 /* CalendarMonthModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalendarMonthModel.m; sourceTree = "<group>"; };
+		A9265E091FC2D2EB00D83BA7 /* UIView+Cornerdious.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Cornerdious.h"; sourceTree = "<group>"; };
+		A9265E0A1FC2D2EB00D83BA7 /* UIView+Cornerdious.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Cornerdious.m"; sourceTree = "<group>"; };
+		A9265E0C1FC2D6F300D83BA7 /* UIView+L_Frame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+L_Frame.h"; sourceTree = "<group>"; };
+		A9265E0D1FC2D6F300D83BA7 /* UIView+L_Frame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+L_Frame.m"; sourceTree = "<group>"; };
+		A968A3611FC7F94F00F88D16 /* UIImage+Date.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+Date.h"; sourceTree = "<group>"; };
+		A968A3621FC7F94F00F88D16 /* UIImage+Date.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Date.m"; sourceTree = "<group>"; };
+		A968A36A1FC808E100F88D16 /* RecordViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecordViewController.h; sourceTree = "<group>"; };
+		A968A36B1FC808E100F88D16 /* RecordViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecordViewController.m; sourceTree = "<group>"; };
+		A9A956AF1FC4256C0077CDA7 /* CustomAlertView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomAlertView.h; sourceTree = "<group>"; };
+		A9A956B01FC4256C0077CDA7 /* CustomAlertView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomAlertView.m; sourceTree = "<group>"; };
+		A9A956B41FC425B10077CDA7 /* CustomAlertView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomAlertView.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A9265DA91FBD95AF00D83BA7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C68D344D846DC3801025295A /* libPods-ClockCard.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A9265DA31FBD95AF00D83BA7 = {
+			isa = PBXGroup;
+			children = (
+				A9265DAE1FBD95AF00D83BA7 /* ClockCard */,
+				A9265DAD1FBD95AF00D83BA7 /* Products */,
+				F53BCD1AB879329B352A47B2 /* Pods */,
+				C3C072A1EFDF041585B979EA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A9265DAD1FBD95AF00D83BA7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A9265DAC1FBD95AF00D83BA7 /* ClockCard.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A9265DAE1FBD95AF00D83BA7 /* ClockCard */ = {
+			isa = PBXGroup;
+			children = (
+				A9265DD31FBE8E4600D83BA7 /* ClockCalendar */,
+				A9265DCF1FBE828F00D83BA7 /* DataDB */,
+				A9265DCA1FBE827A00D83BA7 /* Factory */,
+				A9265DAF1FBD95AF00D83BA7 /* AppDelegate.h */,
+				A9265DB01FBD95AF00D83BA7 /* AppDelegate.m */,
+				A9265DB21FBD95AF00D83BA7 /* ViewController.h */,
+				A9265DB31FBD95AF00D83BA7 /* ViewController.m */,
+				A9265DC51FBD9FA400D83BA7 /* PrefixHeader.pch */,
+				A9265DB51FBD95AF00D83BA7 /* Main.storyboard */,
+				A9265DB81FBD95AF00D83BA7 /* Assets.xcassets */,
+				A9265DBA1FBD95AF00D83BA7 /* LaunchScreen.storyboard */,
+				A9265DBD1FBD95AF00D83BA7 /* Info.plist */,
+				A9265DBE1FBD95AF00D83BA7 /* main.m */,
+			);
+			path = ClockCard;
+			sourceTree = "<group>";
+		};
+		A9265DCA1FBE827A00D83BA7 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				A9265DCB1FBE827A00D83BA7 /* Constant.h */,
+				A9265DCC1FBE827A00D83BA7 /* PublicFactory.h */,
+				A9265DCD1FBE827A00D83BA7 /* PublicFactory.m */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		A9265DCF1FBE828F00D83BA7 /* DataDB */ = {
+			isa = PBXGroup;
+			children = (
+				A9265DD01FBE82C400D83BA7 /* ClockCardDB.h */,
+				A9265DD11FBE82C400D83BA7 /* ClockCardDB.m */,
+			);
+			path = DataDB;
+			sourceTree = "<group>";
+		};
+		A9265DD31FBE8E4600D83BA7 /* ClockCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				A9265E021FC2C19600D83BA7 /* Category */,
+				A9265DF01FC2BBE000D83BA7 /* Model */,
+				A9265DDA1FBEB5A100D83BA7 /* View */,
+				A9265DDD1FBEB5A100D83BA7 /* ViewController */,
+			);
+			path = ClockCalendar;
+			sourceTree = "<group>";
+		};
+		A9265DDA1FBEB5A100D83BA7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A9265DF21FC2BC8400D83BA7 /* ClockCalendarCollectionViewCell.h */,
+				A9265DF61FC2BC8400D83BA7 /* ClockCalendarCollectionViewCell.m */,
+				A9265DF51FC2BC8400D83BA7 /* ClockCalendarCollectionViewCell.xib */,
+				A9265DF11FC2BC8400D83BA7 /* ClockCalendarHearder.h */,
+				A9265DF71FC2BC8400D83BA7 /* ClockCalendarHearder.m */,
+				A9265DF31FC2BC8400D83BA7 /* ClockCalendarView.h */,
+				A9265DF41FC2BC8400D83BA7 /* ClockCalendarView.m */,
+				A9265DF81FC2BC8400D83BA7 /* ClockCalendarWeekView.h */,
+				A9265DF91FC2BC8400D83BA7 /* ClockCalendarWeekView.m */,
+				A9A956AF1FC4256C0077CDA7 /* CustomAlertView.h */,
+				A9A956B01FC4256C0077CDA7 /* CustomAlertView.m */,
+				A9A956B41FC425B10077CDA7 /* CustomAlertView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A9265DDD1FBEB5A100D83BA7 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A9265DDE1FBEB5A100D83BA7 /* ClockCalendarViewController.h */,
+				A9265DDF1FBEB5A100D83BA7 /* ClockCalendarViewController.m */,
+				A968A36A1FC808E100F88D16 /* RecordViewController.h */,
+				A968A36B1FC808E100F88D16 /* RecordViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		A9265DF01FC2BBE000D83BA7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A9265DFF1FC2BDB600D83BA7 /* CalendarDayModel.h */,
+				A9265E001FC2BDB600D83BA7 /* CalendarDayModel.m */,
+				A9265E061FC2C29800D83BA7 /* CalendarMonthModel.h */,
+				A9265E071FC2C29800D83BA7 /* CalendarMonthModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A9265E021FC2C19600D83BA7 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				A9265E031FC2C1B800D83BA7 /* NSDate+Calendar.h */,
+				A9265E041FC2C1B800D83BA7 /* NSDate+Calendar.m */,
+				A9265E091FC2D2EB00D83BA7 /* UIView+Cornerdious.h */,
+				A9265E0A1FC2D2EB00D83BA7 /* UIView+Cornerdious.m */,
+				A9265E0C1FC2D6F300D83BA7 /* UIView+L_Frame.h */,
+				A9265E0D1FC2D6F300D83BA7 /* UIView+L_Frame.m */,
+				A968A3611FC7F94F00F88D16 /* UIImage+Date.h */,
+				A968A3621FC7F94F00F88D16 /* UIImage+Date.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		C3C072A1EFDF041585B979EA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A43074C89D51367DEC43C1C9 /* libPods-ClockCard.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F53BCD1AB879329B352A47B2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				827376BC8571EB3A5111E4F2 /* Pods-ClockCard.debug.xcconfig */,
+				6922147B971F0085015CF791 /* Pods-ClockCard.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A9265DAB1FBD95AF00D83BA7 /* ClockCard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9265DC21FBD95AF00D83BA7 /* Build configuration list for PBXNativeTarget "ClockCard" */;
+			buildPhases = (
+				758F23DB3E5A0CC607289E39 /* [CP] Check Pods Manifest.lock */,
+				A9265DA81FBD95AF00D83BA7 /* Sources */,
+				A9265DA91FBD95AF00D83BA7 /* Frameworks */,
+				A9265DAA1FBD95AF00D83BA7 /* Resources */,
+				51F2962C809A9DF1CCBE9CF6 /* [CP] Embed Pods Frameworks */,
+				F9F3B3BEE98327A8AE7C6228 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ClockCard;
+			productName = ClockCard;
+			productReference = A9265DAC1FBD95AF00D83BA7 /* ClockCard.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A9265DA41FBD95AF00D83BA7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = lv;
+				TargetAttributes = {
+					A9265DAB1FBD95AF00D83BA7 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = A9265DA71FBD95AF00D83BA7 /* Build configuration list for PBXProject "ClockCard" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A9265DA31FBD95AF00D83BA7;
+			productRefGroup = A9265DAD1FBD95AF00D83BA7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A9265DAB1FBD95AF00D83BA7 /* ClockCard */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A9265DAA1FBD95AF00D83BA7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9A956B51FC425B10077CDA7 /* CustomAlertView.xib in Resources */,
+				A9265DBC1FBD95AF00D83BA7 /* LaunchScreen.storyboard in Resources */,
+				A9265DFB1FC2BC8400D83BA7 /* ClockCalendarCollectionViewCell.xib in Resources */,
+				A9265DB91FBD95AF00D83BA7 /* Assets.xcassets in Resources */,
+				A9265DB71FBD95AF00D83BA7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		51F2962C809A9DF1CCBE9CF6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ClockCard/Pods-ClockCard-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		758F23DB3E5A0CC607289E39 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ClockCard-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9F3B3BEE98327A8AE7C6228 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ClockCard/Pods-ClockCard-resources.sh",
+				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ClockCard/Pods-ClockCard-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A9265DA81FBD95AF00D83BA7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9265DB41FBD95AF00D83BA7 /* ViewController.m in Sources */,
+				A9265DFE1FC2BC8400D83BA7 /* ClockCalendarWeekView.m in Sources */,
+				A9265DD21FBE82C400D83BA7 /* ClockCardDB.m in Sources */,
+				A9265DCE1FBE827A00D83BA7 /* PublicFactory.m in Sources */,
+				A9265E051FC2C1B800D83BA7 /* NSDate+Calendar.m in Sources */,
+				A9265DFC1FC2BC8400D83BA7 /* ClockCalendarCollectionViewCell.m in Sources */,
+				A9265DE11FBEB5A100D83BA7 /* ClockCalendarViewController.m in Sources */,
+				A9265DFA1FC2BC8400D83BA7 /* ClockCalendarView.m in Sources */,
+				A9265DBF1FBD95AF00D83BA7 /* main.m in Sources */,
+				A9265DFD1FC2BC8400D83BA7 /* ClockCalendarHearder.m in Sources */,
+				A9A956B11FC4256C0077CDA7 /* CustomAlertView.m in Sources */,
+				A9265E0B1FC2D2EB00D83BA7 /* UIView+Cornerdious.m in Sources */,
+				A9265E0E1FC2D6F300D83BA7 /* UIView+L_Frame.m in Sources */,
+				A9265E011FC2BDB600D83BA7 /* CalendarDayModel.m in Sources */,
+				A968A3631FC7F94F00F88D16 /* UIImage+Date.m in Sources */,
+				A968A36C1FC808E100F88D16 /* RecordViewController.m in Sources */,
+				A9265DB11FBD95AF00D83BA7 /* AppDelegate.m in Sources */,
+				A9265E081FC2C29800D83BA7 /* CalendarMonthModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A9265DB51FBD95AF00D83BA7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9265DB61FBD95AF00D83BA7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A9265DBA1FBD95AF00D83BA7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9265DBB1FBD95AF00D83BA7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A9265DC01FBD95AF00D83BA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ClockCard/PrefixHeader.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A9265DC11FBD95AF00D83BA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ClockCard/PrefixHeader.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A9265DC31FBD95AF00D83BA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 827376BC8571EB3A5111E4F2 /* Pods-ClockCard.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ClockCard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lv.ClockCard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A9265DC41FBD95AF00D83BA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6922147B971F0085015CF791 /* Pods-ClockCard.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ClockCard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lv.ClockCard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A9265DA71FBD95AF00D83BA7 /* Build configuration list for PBXProject "ClockCard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9265DC01FBD95AF00D83BA7 /* Debug */,
+				A9265DC11FBD95AF00D83BA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9265DC21FBD95AF00D83BA7 /* Build configuration list for PBXNativeTarget "ClockCard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9265DC31FBD95AF00D83BA7 /* Debug */,
+				A9265DC41FBD95AF00D83BA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A9265DA41FBD95AF00D83BA7 /* Project object */;
+}
